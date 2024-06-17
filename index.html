@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <div class="header">CALCULATE THE AGE</div>
+
+    <div class="container">
+      <div class="upper">
+        <div class="first-column">
+          <div class="year div">Year:</div>
+          <div class="month div">Month:</div>
+          <div class="day div">Day:</div>
+          <div class="week div">Week:</div>
+          <div class="hour div">Hour:</div>
+          <div class="minute div">Minute:</div>
+          <div class="second div">Second:</div>
+          <div class="milli-sec div">Milli.Sec:</div>
+        </div>
+
+        <div class="second-column">
+          <div class="span-year"><span class="number-year">0</span> Year</div>
+          <div class="span-month">
+            <span class="number-month">0</span> Month
+          </div>
+          <div class="span-day"><span class="number-day">0</span> Day</div>
+          <div class="span-week"><span class="number-week">0</span> Week</div>
+          <div class="span-hour"><span class="number-hour">0</span> Hour</div>
+          <div class="span-minute">
+            <span class="number-minute">0</span> Minute
+          </div>
+          <div class="span-second">
+            <span class="number-second">0</span> Second
+          </div>
+          <div class="span-milli-sec">
+            <span class="number-milli-sec">0</span> Milli.Sec
+          </div>
+        </div>
+      </div>
+
+      <div class="lower">
+        <div class="div-current-date">
+          <div class="current-date label">Current date:</div>
+          <input
+            type="date"
+            id="current-date"
+            min="1900-01-01"
+            max="2025-12-31"
+            required
+          />
+        </div>
+
+        <div class="div-dob">
+          <div class="birth-date label">My D.O.B</div>
+          <input
+            type="date"
+            id="birth-date"
+            min="1900-01-01"
+            max="2025-12-31"
+            required
+          />
+        </div>
+      </div>
+      <p class="result"></p>
+
+      <div class="button-div">
+        <button class="btn">Please change the both dates</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
